@@ -1,0 +1,38 @@
+{
+  "name": "backend-autoqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "clean:serenity": "rimraf target/site/serenity",
+    "report:update": "npx serenity-bdd update",
+    "report:generate": "npx serenity-bdd run --features ./src/features --output ./target/site/serenity",
+    "report:open": "start ./target/site/serenity/index.html",
+    "report:full": "npm run report:update && npm run report:generate && npm run report:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0",
+    "@playwright/test": "^1.58.2",
+    "@serenity-js/assertions": "^3.35.2",
+    "@serenity-js/console-reporter": "^3.35.2",
+    "@serenity-js/core": "^3.35.2",
+    "@serenity-js/cucumber": "^3.35.2",
+    "@serenity-js/playwright": "^3.35.2",
+    "@serenity-js/serenity-bdd": "^3.35.2",
+    "@serenity-js/web": "^3.35.2",
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^20.19.23",
+    "@types/papaparse": "^5.3.16",
+    "papaparse": "^5.5.3",
+    "playwright": "^1.56.1",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "xlsx-populate": "^1.21.0"
+  }
+}
