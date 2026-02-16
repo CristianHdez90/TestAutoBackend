@@ -14,8 +14,7 @@ env:
 jobs:
   test:
     name: "🧪 Pruebas (Run Tests)"
-    runs-on: ubuntu-latest
-    environment: API_key   # <--- Aquí se indica el environment
+    runs-on: ubuntu-latest    
     steps:
       - name: 🧩 Checkout code
         uses: actions/checkout@v4
@@ -34,12 +33,9 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: 🧪 Run tests and generate Serenity JSON
-        env:
-          KEY: ${{ secrets.KEY }}                 
-        run: |
-          echo "El valor del secret KEY es: $KEY"          
-          npx cucumber-js
+      - name: 🧪 Run tests and generate Serenity JSON                      
+        run: |                    
+          npx cucumber-js\
           --require-module ts-node/register
           --require src/support/serenity.config.ts
           --require src/support/hooks.config.ts
