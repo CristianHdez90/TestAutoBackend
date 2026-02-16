@@ -36,9 +36,9 @@ jobs:
 
       - name: 🧪 Run tests and generate Serenity JSON
         env:
-          AT: ${{ secrets.AT }}                 
+          KEY: ${{ secrets.KEY }}                 
         run: |
-          echo "El valor del secret AT es: $AT"          
+          echo "El valor del secret KEY es: $KEY"          
           npx cucumber-js
           --require-module ts-node/register
           --require src/support/serenity.config.ts
