@@ -46,7 +46,7 @@ jobs:
           --require src/steps/**/*.ts
           src/test/features/**/*.feature
           --format @serenity-js/cucumber
-          --format-options "{\"outputDirectory\": \"$REPORT_DIR\", \"specDirectory\": \"src/features\"}"
+          --format-options "{\"outputDirectory\": \"$REPORT_DIR\", \"specDirectory\": \"src/test/features\"}"
         continue-on-error: true
 
       - name: 📤 Upload Serenity JSON artifact
