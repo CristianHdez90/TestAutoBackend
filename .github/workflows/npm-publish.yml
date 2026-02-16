@@ -34,7 +34,7 @@ jobs:
           java-version: '17'
 
       - name: 🧪 Run tests and generate Serenity JSON                      
-        run: |                    
+        run: >
           npx cucumber-js
           --require-module ts-node/register
           --require src/support/serenity.config.ts
