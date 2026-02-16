@@ -35,7 +35,7 @@ jobs:
 
       - name: 🧪 Run tests and generate Serenity JSON                      
         run: |                    
-          npx cucumber-js\
+          npx cucumber-js
           --require-module ts-node/register
           --require src/support/serenity.config.ts
           --require src/support/hooks.config.ts
