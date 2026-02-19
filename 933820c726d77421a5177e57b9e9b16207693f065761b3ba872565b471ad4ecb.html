@@ -147,7 +147,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-02-2026 23:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-02-2026 07:29</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -206,9 +206,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="failing-color">
                                     Actualizaci&oacute;n exitosa de usuario
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -252,7 +252,7 @@
                                                     <li>AnswerQuestions</li>
                                                     <li>RaiseErrors</li>
                                                     <li>ScheduleWork { scheduler: { clock: { timeAdjustment: { milliseconds: 0 } }, interactionTimeout: { milliseconds: 5000 } } }</li>
-                                                    <li>CallAnApi { baseURL: "https://reqres.in/api", headers: { common: { Accept: "application/json, text/plain, */*" }, "Content-Type": "application/json", "x-api-key": "reqres_597960b2f19a45eeb2ec6531b2998eb6" }, timeout: 10000 }</li>
+                                                    <li>CallAnApi { baseURL: "https://reqres.in", headers: { common: { Accept: "application/json, text/plain, */*" }, "Content-Type": "application/json", "x-api-key": "reqres_597960b2f19a45eeb2ec6531b2998eb6" }, timeout: 10000 }</li>
                                             </ul>
                                         </div>
                                 </div>
@@ -306,26 +306,26 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#0">1</a></td>
-                            <td class="test-SUCCESS"><a
+                        <td class="test-FAILURE"><a href="#0">1</a></td>
+                            <td class="test-FAILURE"><a
                                         href="#0">/api/users/1</a>
                             </td>
-                            <td class="test-SUCCESS"><a
+                            <td class="test-FAILURE"><a
                                         href="#0">george.bluth@reqres.in</a>
                             </td>
-                            <td class="test-SUCCESS"><a
+                            <td class="test-FAILURE"><a
                                         href="#0">GeorgeTest</a>
                             </td>
-                            <td class="test-SUCCESS"><a
+                            <td class="test-FAILURE"><a
                                         href="#0">Bluth</a>
                             </td>
-                            <td class="test-SUCCESS"><a
+                            <td class="test-FAILURE"><a
                                         href="#0">https://reqres.in/img/faces/1-image.jpg</a>
                             </td>
-                            <td class="test-SUCCESS"><a
+                            <td class="test-FAILURE"><a
                                         href="#0">200</a>
                             </td>
-                            <td class="test-SUCCESS"><a
+                            <td class="test-FAILURE"><a
                                         href="#0">legacy_success</a>
                             </td>
                     </tr>
@@ -350,13 +350,13 @@
                 <td colspan="5"></td>
             </tr>
 
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection0 failure-icon"
                                    style="margin-left: 20px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -374,8 +374,8 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">398ms</span></td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">350ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -400,7 +400,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -449,7 +449,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">328ms</span></td>
+                    <td width="100"><span class="nested-step">321ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -479,7 +479,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">314ms</span></td>
+                    <td width="100"><span class="nested-step">307ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -513,16 +513,16 @@
                             <div class="card-body">
                                 <h4>Response</h4>
                                     <p>URL: https://reqres.in/api/users/1</p>
-                                    <p>Status code: 200</p>
+                                    <p>Status code: 429</p>
                                     <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
                                     <pre>Accept: application/json, text/plain, */*<br>Content-Type: application/json<br>x-api-key: reqres_597960b2f19a45eeb2ec6531b2998eb6<br>User-Agent: axios/1.13.5<br>Content-Length: 131<br>Accept-Encoding: gzip, compress, deflate, br</pre>
                                     <h4>Content Body</h4>
                                     <pre>{&quot;email&quot;:&quot;george.bluth@reqres.in&quot;,&quot;first_name&quot;:&quot;GeorgeTest&quot;,&quot;last_name&quot;:&quot;Bluth&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/1-image.jpg&quot;}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>date: Mon, 16 Feb 2026 23:54:56 GMT<br>content-type: application/json; charset=utf-8<br>transfer-encoding: chunked<br>connection: close<br>access-control-allow-credentials: true<br>access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key<br>access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS<br>access-control-allow-origin: http://localhost:5173<br>etag: W/&quot;233-ZLU/vmmN/VdyTLmBVizE5zyfQqc&quot;<br>nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}<br>ratelimit-limit: 20<br>ratelimit-policy: 20;w=60<br>ratelimit-remaining: 19<br>ratelimit-reset: 60<br>referrer-policy: strict-origin-when-cross-origin<br>report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=zdcrTG55s%2FF1iLLAWYp5VNWvrt5gH6UJQi%2BMJhRA9ns%3D&#92;0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11&#92;0026ts=1771286096&quot;}],&quot;max_age&quot;:3600}<br>reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=zdcrTG55s%2FF1iLLAWYp5VNWvrt5gH6UJQi%2BMJhRA9ns%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1771286096&quot;<br>server: cloudflare<br>vary: Origin<br>via: 1.1 heroku-router<br>x-content-type-options: nosniff<br>x-frame-options: DENY<br>x-powered-by: ReqRes.in - Deploy backends in 30 seconds<br>x-ratelimit-limit: 250<br>x-ratelimit-remaining: 100<br>x-ratelimit-reset: 1771286400<br>x-reqres-docs: https://reqres.in<br>x-reqres-message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!<br>x-reqres-templates: https://app.reqres.in/templates<br>x-reqres-trial: true<br>x-reqres-trial-days-remaining: 13<br>x-reqres-trial-expires: 2026-03-01T23:35:50.421Z<br>x-reqres-upgrade: https://app.reqres.in/upgrade<br>x-request-id: 8cfaffca-52ae-184d-c636-253b81b2f1ba<br>x-robots-tag: noindex, nofollow<br>x-xss-protection: 1; mode=block<br>cf-cache-status: DYNAMIC<br>cf-ray: 9cf0f9145b5ca91e-DFW</pre>
+                                    <pre>date: Thu, 19 Feb 2026 07:29:27 GMT<br>content-type: application/json; charset=utf-8<br>content-length: 785<br>connection: close<br>access-control-allow-credentials: true<br>access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key<br>access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS<br>access-control-allow-origin: http://localhost:5173<br>etag: W/&quot;311-zQvjTtLF0R9u5zMmUl14Lf4GugQ&quot;<br>nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}<br>referrer-policy: strict-origin-when-cross-origin<br>report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=onSCn22G4Glzr%2Ftlas8dRuIOvXB6vPd41wkF65nInqg%3D&#92;0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11&#92;0026ts=1771486167&quot;}],&quot;max_age&quot;:3600}<br>reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=onSCn22G4Glzr%2Ftlas8dRuIOvXB6vPd41wkF65nInqg%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1771486167&quot;<br>server: cloudflare<br>vary: Origin<br>via: 1.1 heroku-router<br>x-content-type-options: nosniff<br>x-frame-options: DENY<br>x-powered-by: ReqRes.in - Deploy backends in 30 seconds<br>x-ratelimit-limit: 250<br>x-ratelimit-remaining: 0<br>x-ratelimit-reset: 1771545600<br>x-reqres-docs: https://reqres.in<br>x-reqres-message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!<br>x-reqres-templates: https://app.reqres.in/templates<br>x-reqres-trial: true<br>x-reqres-trial-days-remaining: 11<br>x-reqres-trial-expires: 2026-03-01T23:35:50.421Z<br>x-reqres-upgrade: https://app.reqres.in/upgrade<br>x-request-id: 4be2330c-f726-62b5-aecc-e87720809db2<br>x-robots-tag: noindex, nofollow<br>x-xss-protection: 1; mode=block<br>cf-cache-status: DYNAMIC<br>cf-ray: 9d040da25c838bdb-SJC</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,<br>    &quot;first_name&quot;: &quot;GeorgeTest&quot;,<br>    &quot;last_name&quot;: &quot;Bluth&quot;,<br>    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;,<br>    &quot;updatedAt&quot;: &quot;2026-02-16T23:54:56.243Z&quot;,<br>    &quot;_meta&quot;: {<br>        &quot;powered_by&quot;: &quot;ReqRes&quot;,<br>        &quot;docs_url&quot;: &quot;https://app.reqres.in/documentation&quot;,<br>        &quot;upgrade_url&quot;: &quot;https://app.reqres.in/upgrade&quot;,<br>        &quot;example_url&quot;: &quot;https://app.reqres.in/examples/notes-app&quot;,<br>        &quot;variant&quot;: &quot;v1_a&quot;,<br>        &quot;message&quot;: &quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,<br>        &quot;cta&quot;: {<br>            &quot;label&quot;: &quot;See example app&quot;,<br>            &quot;url&quot;: &quot;https://app.reqres.in/examples/notes-app&quot;<br>        },<br>        &quot;context&quot;: &quot;legacy_success&quot;<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;error&quot;: &quot;rate_limit_exceeded&quot;,<br>    &quot;message&quot;: &quot;You've hit today's Free request limit.&quot;,<br>    &quot;limit&quot;: 250,<br>    &quot;remaining&quot;: 0,<br>    &quot;reset_at&quot;: 1771545600,<br>    &quot;resets_in&quot;: &quot;16h 30m&quot;,<br>    &quot;reset_explanation&quot;: &quot;Limits reset daily at midnight UTC&quot;,<br>    &quot;upgrade_url&quot;: &quot;https://app.reqres.in/upgrade&quot;,<br>    &quot;recommended_plan&quot;: &quot;dev&quot;,<br>    &quot;why_this_happened&quot;: &quot;Free usage is designed for trying things out. Paid plans unlock higher limits and longer logs.&quot;,<br>    &quot;tier&quot;: &quot;free&quot;,<br>    &quot;_meta&quot;: {<br>        &quot;powered_by&quot;: &quot;ReqRes&quot;,<br>        &quot;docs_url&quot;: &quot;https://app.reqres.in/documentation&quot;,<br>        &quot;upgrade_url&quot;: &quot;https://app.reqres.in/upgrade&quot;,<br>        &quot;example_url&quot;: &quot;https://app.reqres.in/examples/notes-app&quot;,<br>        &quot;variant&quot;: &quot;v1_a&quot;,<br>        &quot;message&quot;: &quot;Rate limited to keep ReqRes free. Projects unlock higher limits + logs.&quot;,<br>        &quot;cta&quot;: {<br>            &quot;label&quot;: &quot;Upgrade&quot;,<br>            &quot;url&quot;: &quot;https://app.reqres.in/upgrade&quot;<br>        },<br>        &quot;context&quot;: &quot;rate_limited&quot;<br>    }<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -533,7 +533,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">293ms</span></td>
+                    <td width="100"><span class="nested-group-step">285ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -565,13 +565,13 @@
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="70" class="step-icon">
                         <a name="0-3"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0-3 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection0-3 failure-icon"
                                    style="margin-left: 40px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -589,18 +589,18 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
                     <td width="100"><span class="nested-step">014ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
                             <table id="stepSection0-3" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="90" class="step-icon">
                         <a name="0-3-0"></a>
                             <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
                                 </span>
                     </td>
 
@@ -614,189 +614,125 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
                     <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected el c&oacute;digo de respuesta sea to equal 200<br><br>Expectation: equals(200)<br><br>Expected number: 200<br>Received number: 429<br><br>    at /home/runner/work/TestAutoBackend/TestAutoBackend/src/com/siigo/certification/api/steps/UserGET.steps.ts:22:16</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-9"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-9">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/home/runner/work/TestAutoBackend/TestAutoBackend/src/com/siigo/certification/api/steps/UserGET.steps.ts:22)<br />.ErrorFactory.create()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.async PerformActivities.perform()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.async World.<anonymous>()(/home/runner/work/TestAutoBackend/TestAutoBackend/src/com/siigo/certification/api/steps/UserGET.steps.ts:21)<br />.async wrapPromiseWithTimeout()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@cucumber/cucumber/src/time.ts:55)<br />.async Object.run()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@cucumber/cucumber/src/user_code_runner.ts:86)<br />.async Object.run()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@cucumber/cucumber/src/runtime/step_runner.ts:50)<br />.async TestCaseRunner.invokeStep()(/home/runner/work/TestAutoBackend/TestAutoBackend/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:137)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
                     <td width="70" class="step-icon">
                         <a name="0-4"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
-                               style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0-4 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                And el campo first_name debe ser igual a &quot;GeorgeTest&quot;
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">014ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection0-4" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-4-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Userqa ensures that el first_name del usuario actualizado does equal &quot;GeorgeTest&quot;
+                                                And el campo first_name debe ser igual a &quot;GeorgeTest&quot;
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                    <td width="130"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
                     <td width="70" class="step-icon">
                         <a name="0-5"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
-                               style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0-5 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                And el campo last_name debe ser igual a &quot;Bluth&quot;
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">013ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection0-5" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-5-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Userqa ensures that el last_name del usuario actualizado does equal &quot;Bluth&quot;
+                                                And el campo last_name debe ser igual a &quot;Bluth&quot;
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                    <td width="130"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
                     <td width="70" class="step-icon">
                         <a name="0-6"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
-                               style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0-6 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                And el campo context debe ser igual a &quot;legacy_success&quot;
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">013ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection0-6" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-6-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Userqa ensures that el contexto del meta does equal &quot;legacy_success&quot;
+                                                And el campo context debe ser igual a &quot;legacy_success&quot;
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="130"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
 
                             </table>
                         </td>
                     </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-            <tr class="test-SUCCESS">
+            <tr class="test-FAILURE">
                     <td colspan="2"></td>
-                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>0.4s</em></span></td>
+                <td width="130"><span class="top-level-step"><em>FAILURE</em></span></td>
+                <td width="100"><span class="top-level-step"><em>0.35s</em></span></td>
             </tr>
 
         </table>
